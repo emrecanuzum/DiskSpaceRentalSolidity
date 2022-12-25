@@ -12,6 +12,13 @@ This is a Solidity contract written on the Ethereum blockchain that specifies ho
 
 ## How to Run?
 
+First of all, I ran the code on the "Remix Online IDE". To ensure that the latest version of SafeMath works, I preferred version 0.8.0. Please try the code first on the testnet with 10 finney.
+
+When you set up the contract, some functions will appear on the left side. First, you need to give some information about your rental transaction using the "setRentDetails" function (in this section, the rentID increases with each constructor). As a result of this process, you are essentially saying that you are renting this much space, at this price, for this period of time on the market.
+
+Then, you can rent the space you want by entering the appropriate amount of finney in the rent function along with the Id.
+
+The terminate and retrieve functions allow you to cancel the rent status in the system.
 
 
 ## About Functions
