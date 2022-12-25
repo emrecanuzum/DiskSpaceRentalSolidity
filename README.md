@@ -1,4 +1,4 @@
-#TL;DR
+# TL;DR
 
 Sharing disk space is one of the increasingly pressing needs that catch our eye nowadays. If we had a fast, irresistible, safe, and reliable database and fast enough internet connections worldwide, we would be using this system comfortably right now. But if we solve the internet problem, how will we trust this database? How will we send our information to someone else's disk with confidence?
 
@@ -6,7 +6,7 @@ At this point, blockchain technology makes our job very easy. Here, I prepared a
 
 
 
-##Disk Space Renting System demo with Solidity 0.8.0
+## Disk Space Renting System demo with Solidity 0.8.0
 
 This is the Solidity code for a smart contract called DiskSpaceRental, which allows users to rent disk space from other users. The contract uses the SafeMath library from OpenZeppelin to perform safe arithmetic operations on uint256 values.
 
