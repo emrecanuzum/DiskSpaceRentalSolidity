@@ -74,12 +74,14 @@ contract DiskSpaceRental {
     }
 
     // Function for the owner to terminate a rental early
-    function terminateRental(uint256 _rentalId) public {
+    function terminateRental(uint256 _rentalId) public payable{
         // Retrieve the rental
         Rental storage rental = rentals[_rentalId];
 
         // Check that the caller is the owner of the rental
-        require(msg.sender == rental.owner, "Only the owner can terminate a rental.");
+        require(msg.sender == rental.owner && msg.value >= rental.price , "Only the owner can terminate a rental.");
+
+        rental.renter.transfer(msg.value);
 
         // Set the rental to inactive
         rental.active = false;
